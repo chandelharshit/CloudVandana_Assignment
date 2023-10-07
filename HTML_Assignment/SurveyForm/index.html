@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>CloudVandana Assignment</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Project-1</a></li>
+                <li><a href="#">Project-2</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- <h1>Survey Form</h1> -->
+        <div class="left">
+            <form id="surveyForm">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" required>
+                        <option value="">Select Country</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+                
+            </form>    
+        </div>
+            <div class="right">
+                <form>
+                    <div class="form-group">
+                        <div class="gender-checkboxes">
+                            <label>Gender:</label>
+                            <input type="checkbox" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                            <input type="checkbox" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                <label for="profession">Profession:</label>
+                <input type="text" id="profession" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" required>
+            </div>
+            
+        </form>
+        <div class="form-group">
+            <button type="button" id="resetBtn">Reset</button>
+            <button type="button" id="submitBtn">Submit</button>
+        </div>
+            </div>
+            
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Survey Form Submission</h2>
+            <p><strong>First Name:</strong> <span id="popupFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="popupLastName"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="popupDob"></span></p>
+            <p><strong>Country:</strong> <span id="popupCountry"></span></p>
+            <p><strong>Gender:</strong> <span id="popupGender"></span></p>
+            <p><strong>Profession:</strong> <span id="popupProfession"></span></p>
+            <p><strong>Email:</strong> <span id="popupEmail"></span></p>
+            <p><strong>Mobile Number:</strong> <span id="popupMobile"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
